@@ -1,0 +1,5 @@
+2022-01-29 20:34:23.941089 [INFO] [31544] [109.153.213.149:23659:HTTP2-15#jakesumner.co.uk] Connection idle time too long: 301 while in state: 6 watching for event: 402433, close!
+2022-01-29 20:34:23.941178 [INFO] [31544] [109.153.213.149:23659:HTTP2-15] Content len: 0, Request line: 
+GET / HTTP/1.1
+2022-01-29 20:34:23.941195 [INFO] [31544] [109.153.213.149:23659:HTTP2-15#jakesumner.co.uk] HttpExtConnector state: 8, request body sent: 0, response body size: -2, response body sent:0, left in buffer: 0, attempts: 0.
+2022-01-29 20:34:23.941210 [INFO] [31544] [109.153.213.149:23659:HTTP2-15#jakesumner.co.uk] Proxy connection state: 2, watching event: 25, Request header:557, body:0, sent:0, Response header: 0, total: 0 bytes received in 301 seconds,Total processing time: 301.
