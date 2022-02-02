@@ -65,8 +65,8 @@ const Home = () => (
           Work
         </Heading>
         <Paragraph>
-          Jake aspires to a Full-Stack developer [MEAN/LAMP/.NET].
-          Some pieces I've worked on are available on: {' '}
+          Jake aspires to become a Full-Stack developer [MEAN/LAMP/.NET].
+          Some pieces I&apos;ve worked on are available on: {' '}
           <NextLink href="/works/github">
             <Link>GitHub</Link>
           </NextLink>
