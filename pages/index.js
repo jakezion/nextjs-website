@@ -19,8 +19,9 @@ import Paragraph from '../components/paragraph'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import {GridItem} from '../components/grid-item'
-import {IoLogoInstagram, IoLogoGithub, IoLogoYoutube} from 'react-icons/io5'
-// import thumbYouTube from '../public/images/links/youtube.png'
+import {IoLogoInstagram, IoLogoGithub} from 'react-icons/io5'
+import thumbGithub from '../public/images/works/github.png'
+import thumbYoutube from '../public/images/works/youtube.png'
 
 const Home = () => (
     <Layout>
@@ -214,16 +215,16 @@ const Home = () => (
                     <GridItem
                         href="https://www.youtube.com/TheAdsync"
                         title="Adsync"
-                        thumbnail={IoLogoYoutube}
+                        thumbnail={thumbYoutube}
                     >
                         YouTube Channel
                     </GridItem>
                     <GridItem
-                        href="https://www.twitch.tv/adsync"
-                        title="Adsync"
-                        thumbnail={IoLogoYoutube}
+                        href="https://github.com/jakezion"
+                        title="jakezion"
+                        thumbnail={thumbGithub}
                     >
-                        Twitch Channel
+                        GitHub Page
                     </GridItem>
                 </SimpleGrid>
 
