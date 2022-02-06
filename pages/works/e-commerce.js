@@ -14,7 +14,7 @@ import {Title, WorkImage, Meta} from '../../components/work'
 import P from '../../components/paragraph'
 
 const Work = () => (
-    <Layout title="Menkiki (麺利き)">
+    <Layout title="e-commerce">
         <Container>
             <Title>
                 e-commerce platform <Badge>php stack</Badge>
