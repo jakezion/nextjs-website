@@ -86,54 +86,52 @@ const Home = () => (
           Tech Stack
         </Heading>
         <Image
-            borderColor="whiteAlpha.800"
-            borderWidth={2}
-            borderStyle="solid"
-            maxWidth="100px"
+            maxWidth="32px"
+            maxHeight="32px"
             display="inline-block"
-            borderRadius="full"
-            src="/images/jake.jpg"
-            alt="Profile image"
+            src="/images/icons/javascript.png"
+            alt="JavaScript Logo"
+            loading="lazy"
         />
         <Image
-            borderColor="whiteAlpha.800"
-            borderWidth={2}
-            borderStyle="solid"
-            maxWidth="100px"
+            maxWidth="32px"
+            maxHeight="32px"
             display="inline-block"
-            borderRadius="full"
-            src="/images/jake.jpg"
-            alt="Profile image"
+            src="/images/icons/react.png"
+            alt="ReactJs Logo"
+            loading="lazy"
         />
         <Image
-            borderColor="whiteAlpha.800"
-            borderWidth={2}
-            borderStyle="solid"
-            maxWidth="100px"
+            maxWidth="32px"
+            maxHeight="32px"
             display="inline-block"
-            borderRadius="full"
-            src="/images/jake.jpg"
-            alt="Profile image"
+            src="/images/icons/express.png"
+            alt="ExpressJs Logo"
+            loading="lazy"
         />
         <Image
-            borderColor="whiteAlpha.800"
-            borderWidth={2}
-            borderStyle="solid"
-            maxWidth="100px"
+            maxWidth="32px"
+            maxHeight="32px"
             display="inline-block"
-            borderRadius="full"
-            src="/images/jake.jpg"
-            alt="Profile image"
+            src="/images/icons/next.png"
+            alt="NextJs Logo"
+            loading="lazy"
         />
         <Image
-            borderColor="whiteAlpha.800"
-            borderWidth={2}
-            borderStyle="solid"
-            maxWidth="100px"
+            maxWidth="32px"
+            maxHeight="32px"
             display="inline-block"
-            borderRadius="full"
-            src="/images/jake.jpg"
-            alt="Profile image"
+            src="/images/icons/github.png"
+            alt="GitHub Logo"
+            loading="lazy"
+        />
+        <Image
+            maxWidth="32px"
+            maxHeight="32px"
+            display="inline-block"
+            src="/images/icons/vercel.png"
+            alt="Vercel Logo"
+            loading="lazy"
         />
       </Section>
 
