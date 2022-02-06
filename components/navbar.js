@@ -26,7 +26,7 @@ const LinkItem = ({ href, path, _target, children, ...props }) => {
       <Link
         p={2}
         bg={active ? 'grassTeal' : undefined}
-        color={active ? '#202023' : inactiveColor}
+        color={active ? '#2D2A2E' : inactiveColor}
         _target={_target}
         {...props}
       >
@@ -44,7 +44,7 @@ const Navbar = props => {
       position="fixed"
       as="nav"
       w="100%"
-      bg={useColorModeValue('#ffffff40', '#20202380')}
+      bg={useColorModeValue('#fdf9f340', '#2D2A2E80')}
       css={{ backdropFilter: 'blur(10px)' }}
       zIndex={1}
       {...props}
@@ -114,7 +114,7 @@ const Navbar = props => {
                 </NextLink>
                 <MenuItem
                   as={Link}
-                  href="https://github.com/jakezion/visualiser"
+                  href="https://github.com/jakezion/nextjs-website"
                 >
                   View Source
                 </MenuItem>
