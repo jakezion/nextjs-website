@@ -6,7 +6,7 @@ import {
     ListItem,
     Flex,
     UnorderedList,
-    Image, Spacer, Tooltip
+    Image, Tooltip
 } from '@chakra-ui/react'
 import Layout from '../../components/layouts/article'
 import {ExternalLinkIcon} from '@chakra-ui/icons'
