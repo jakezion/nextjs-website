@@ -77,21 +77,22 @@ const Navbar = props => {
           <LinkItem href="/posts" path={path}>
             Posts
           </LinkItem>
+
+        </Stack>
+
+        <Box flex={1} align="right">
           <LinkItem
-            _target="_blank"
-            href="https://github.com/jakezion/visualiser"
-            path={path}
-            display="inline-flex"
-            alignItems="center"
-            style={{ gap: 4 }}
-            pl={2}
+              _target="_blank"
+              href="https://github.com/jakezion/visualiser"
+              path={path}
+              display="inline-flex"
+              alignItems="center"
+              style={{ gap: 4 }}
+              pl={2}
           >
             <IoLogoGithub />
             Source
           </LinkItem>
-        </Stack>
-
-        <Box flex={1} align="right">
           <ThemeToggleButton />
 
           <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
