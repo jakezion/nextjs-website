@@ -83,6 +83,62 @@ const Home = () => (
 
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
+          Tech Stack
+        </Heading>
+        <Image
+            borderColor="whiteAlpha.800"
+            borderWidth={2}
+            borderStyle="solid"
+            maxWidth="100px"
+            display="inline-block"
+            borderRadius="full"
+            src="/images/jake.jpg"
+            alt="Profile image"
+        />
+        <Image
+            borderColor="whiteAlpha.800"
+            borderWidth={2}
+            borderStyle="solid"
+            maxWidth="100px"
+            display="inline-block"
+            borderRadius="full"
+            src="/images/jake.jpg"
+            alt="Profile image"
+        />
+        <Image
+            borderColor="whiteAlpha.800"
+            borderWidth={2}
+            borderStyle="solid"
+            maxWidth="100px"
+            display="inline-block"
+            borderRadius="full"
+            src="/images/jake.jpg"
+            alt="Profile image"
+        />
+        <Image
+            borderColor="whiteAlpha.800"
+            borderWidth={2}
+            borderStyle="solid"
+            maxWidth="100px"
+            display="inline-block"
+            borderRadius="full"
+            src="/images/jake.jpg"
+            alt="Profile image"
+        />
+        <Image
+            borderColor="whiteAlpha.800"
+            borderWidth={2}
+            borderStyle="solid"
+            maxWidth="100px"
+            display="inline-block"
+            borderRadius="full"
+            src="/images/jake.jpg"
+            alt="Profile image"
+        />
+      </Section>
+
+      <Section delay={0.3}>
+        <Heading as="h3" variant="section-title">
           Hobbies
         </Heading>
         <Paragraph>
