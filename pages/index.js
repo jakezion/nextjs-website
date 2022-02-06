@@ -4,14 +4,14 @@ import {
     Container,
     Heading,
     Box,
-    Stack,
+    Flex,
     Image,
     SimpleGrid,
     Button,
     List,
     ListItem,
     Icon,
-    useColorModeValue
+    useColorModeValue, Spacer
 } from '@chakra-ui/react'
 import {ChevronRightIcon} from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
@@ -88,9 +88,8 @@ const Home = () => (
                 <Heading as="h3" variant="section-title">
                     Tech Stack
                 </Heading>
-                <Stack direction='row'>
+                <Flex>
                     <Image
-                        borderRadius='full'
                         maxWidth="32px"
                         maxHeight="32px"
                         display="inline-block"
@@ -98,6 +97,7 @@ const Home = () => (
                         alt="JavaScript Logo"
                         loading="lazy"
                     />
+                    <Spacer/>
                     <Image
                         maxWidth="32px"
                         maxHeight="32px"
@@ -106,6 +106,7 @@ const Home = () => (
                         alt="ReactJs Logo"
                         loading="lazy"
                     />
+                    <Spacer/>
                     <Image
                         maxWidth="32px"
                         maxHeight="32px"
@@ -114,6 +115,7 @@ const Home = () => (
                         alt="ExpressJs Logo"
                         loading="lazy"
                     />
+                    <Spacer/>
                     <Image
                         maxWidth="32px"
                         maxHeight="32px"
@@ -122,6 +124,7 @@ const Home = () => (
                         alt="NextJs Logo"
                         loading="lazy"
                     />
+                    <Spacer/>
                     <Image
                         maxWidth="32px"
                         maxHeight="32px"
@@ -130,6 +133,7 @@ const Home = () => (
                         alt="GitHub Logo"
                         loading="lazy"
                     />
+                    <Spacer/>
                     <Image
                         maxWidth="32px"
                         maxHeight="32px"
@@ -138,7 +142,7 @@ const Home = () => (
                         alt="Vercel Logo"
                         loading="lazy"
                     />
-                </Stack>
+                </Flex>
             </Section>
 
             <Section delay={0.3}>
