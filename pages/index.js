@@ -32,6 +32,7 @@ const Home = () => (
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
       >
         Master&#39;s Student at the University of Southampton
+        Theme is monokai pro  @link
       </Box>
 
       <Box display={{ md: 'flex' }}>
