@@ -55,7 +55,6 @@ const Work = () => (
                                     loading="lazy"
                                 />
                             </Tooltip>
-                            <Spacer/>
                             <Tooltip label='PHP' placement='bottom'>
                                 <Image
                                     maxWidth="32px"
@@ -66,7 +65,6 @@ const Work = () => (
                                     loading="lazy"
                                 />
                             </Tooltip>
-                            <Spacer/>
                             <Tooltip label='CodeIgniter4' placement='bottom'>
                                 <Image
                                     maxWidth="32px"
@@ -77,7 +75,6 @@ const Work = () => (
                                     loading="lazy"
                                 />
                             </Tooltip>
-                            <Spacer/>
                             <Tooltip label='MySQL' placement='bottom'>
                                 <Image
                                     maxWidth="32px"
