@@ -3,12 +3,12 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
 
-import thumbFishWorkflow from '../public/images/contents/ed.jpg'
-import thumbMyDeskSetup from '../public/images/contents/ed.jpg'
-import thumb500PaidUsers from '../public/images/contents/ed.jpg'
-import thumbFinancialGoal from '../public/images/contents/ed.jpg'
-import thumbHowToPriceYourself from '../public/images/contents/ed.jpg'
-import thumb50xFaster from '../public/images/contents/ed.jpg'
+import thumbFishWorkflow from '../public/images/contents/temp.png'
+import thumbMyDeskSetup from '../public/images/contents/temp.png'
+import thumb500PaidUsers from '../public/images/contents/temp.png'
+import thumbFinancialGoal from '../public/images/contents/temp.png'
+import thumbHowToPriceYourself from '../public/images/contents/temp.png'
+import thumb50xFaster from '../public/images/contents/temp.png'
 
 const Posts = () => (
   <Layout title="Posts">
