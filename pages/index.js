@@ -11,7 +11,7 @@ import {
     List,
     ListItem,
     Icon,
-    useColorModeValue, Spacer
+    useColorModeValue, Spacer, Tooltip
 } from '@chakra-ui/react'
 import {ChevronRightIcon} from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
@@ -89,59 +89,73 @@ const Home = () => (
                     Tech Stack
                 </Heading>
                 <Flex>
-                    <Image
-                        maxWidth="32px"
-                        maxHeight="32px"
-                        display="inline-block"
-                        src="/images/icons/javascript.png"
-                        alt="JavaScript Logo"
-                        loading="lazy"
-                    />
+                    <Tooltip label='Javascript' placement='bottom'>
+                        <Image
+                            maxWidth="32px"
+                            maxHeight="32px"
+                            display="inline-block"
+                            src="/images/icons/javascript.png"
+                            alt="JavaScript Logo"
+                            loading="lazy"
+                        />
+                    </Tooltip>
                     <Spacer/>
-                    <Image
-                        maxWidth="32px"
-                        maxHeight="32px"
-                        display="inline-block"
-                        src="/images/icons/react.png"
-                        alt="ReactJs Logo"
-                        loading="lazy"
-                    />
+                    <Tooltip label='React' placement='bottom'>
+                        <Image
+                            maxWidth="32px"
+                            maxHeight="32px"
+                            display="inline-block"
+                            src="/images/icons/react.png"
+                            alt="ReactJs Logo"
+                            loading="lazy"
+                        />
+                    </Tooltip>
                     <Spacer/>
-                    <Image
-                        maxWidth="32px"
-                        maxHeight="32px"
-                        display="inline-block"
-                        src="/images/icons/express.png"
-                        alt="ExpressJs Logo"
-                        loading="lazy"
-                    />
+                    <Tooltip label='ExpressJs' placement='bottom'>
+                        <Image
+                            maxWidth="32px"
+                            maxHeight="32px"
+                            display="inline-block"
+                            src="/images/icons/express.png"
+                            alt="ExpressJs Logo"
+                            loading="lazy"
+                        />
+                    </Tooltip>
                     <Spacer/>
-                    <Image
-                        maxWidth="32px"
-                        maxHeight="32px"
-                        display="inline-block"
-                        src="/images/icons/next.png"
-                        alt="NextJs Logo"
-                        loading="lazy"
-                    />
+                    <Tooltip label='NextJs' placement='bottom'>
+                        <Image
+                            maxWidth="32px"
+                            maxHeight="32px"
+                            display="inline-block"
+                            src="/images/icons/next.png"
+                            alt="NextJs Logo"
+                            loading="lazy"
+                        />
+                    </Tooltip>
                     <Spacer/>
-                    <Image
-                        maxWidth="32px"
-                        maxHeight="32px"
-                        display="inline-block"
-                        src="/images/icons/github.png"
-                        alt="GitHub Logo"
-                        loading="lazy"
-                    />
+                    <Tooltip label='GitHub' placement='bottom'>
+
+                        <Image
+                            maxWidth="32px"
+                            maxHeight="32px"
+                            display="inline-block"
+                            src="/images/icons/github.png"
+                            alt="GitHub Logo"
+                            loading="lazy"
+                        />
+                    </Tooltip>
                     <Spacer/>
-                    <Image
-                        maxWidth="32px"
-                        maxHeight="32px"
-                        display="inline-block"
-                        src="/images/icons/vercel.png"
-                        alt="Vercel Logo"
-                        loading="lazy"
-                    />
+                    <Tooltip label='Vercel' placement='bottom'>
+
+                        <Image
+                            maxWidth="32px"
+                            maxHeight="32px"
+                            display="inline-block"
+                            src="/images/icons/vercel.png"
+                            alt="Vercel Logo"
+                            loading="lazy"
+                        />
+                    </Tooltip>
                 </Flex>
             </Section>
 
