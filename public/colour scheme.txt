@@ -1,0 +1,10 @@
+black main: #2D2A2E
+darker black: #272822
+pro pink: #FF6188
+pro orange: #FC9867
+pro yellow: #FFD866
+pro green: #A9DC76
+pro blue: #78DCE8
+pro purple: #AB9DF2
+pro white: #fdf9f3
+alt white: #f0e7db
