@@ -78,7 +78,7 @@ const Home = () => (
                 </Paragraph>
                 <Box align="center" my={4}>
                     <NextLink href="/works">
-                        <Button rightIcon={<ChevronRightIcon/>} colorScheme='grassTeal'>
+                        <Button rightIcon={<ChevronRightIcon/>} color={useColorModeValue("white","black")} bg={useColorModeValue('monoPurple', 'monoYellow')}>
                             My portfolio
                         </Button>
                     </NextLink>
@@ -190,7 +190,7 @@ const Home = () => (
                         <Link href="https://github.com/jakezion" target="_blank">
                             <Button
                                 variant="ghost"
-                                colorScheme="yellow"
+                                color={useColorModeValue('monoPurple', 'monoYellow')}
                                 leftIcon={<Icon as={IoLogoGithub}/>}
                             >
                                 @jakezion
@@ -202,7 +202,7 @@ const Home = () => (
                         <Link href="https://instagram.com/jake_sumner" target="_blank">
                             <Button
                                 variant="ghost"
-                                colorScheme="yellow"
+                                color={useColorModeValue('monoPurple', 'monoYellow')}
                                 leftIcon={<Icon as={IoLogoInstagram}/>}
                             >
                                 @jake_sumner
@@ -230,7 +230,7 @@ const Home = () => (
 
                 <Box align="center" my={4}>
                     <NextLink href="/posts">
-                        <Button rightIcon={<ChevronRightIcon/>} colorScheme="yellow">
+                        <Button rightIcon={<ChevronRightIcon/>} color={useColorModeValue("white","black")} bg={useColorModeValue('monoPurple', 'monoYellow')}>
                             Popular posts
                         </Button>
                     </NextLink>

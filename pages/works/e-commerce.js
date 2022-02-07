@@ -45,13 +45,13 @@ const Work = () => (
                     <Meta>Stack</Meta>
                     <span>
                         <Flex>
-                            <Tooltip label='React' placement='bottom'>
+                            <Tooltip label='Bootstrap' placement='bottom'>
                                 <Image
                                     maxWidth="32px"
                                     maxHeight="32px"
                                     display="inline-block"
-                                    src="/images/icons/react.png"
-                                    alt="React Logo"
+                                    src="/images/icons/bootstrap.png"
+                                    alt="Bootstrap Logo"
                                     loading="lazy"
                                 />
                             </Tooltip>
@@ -90,8 +90,8 @@ const Work = () => (
                 </ListItem>
                 <ListItem>
                     <Meta>Source</Meta>
-                    <Link href="https://github.com/jakezion/e-commerce">
-                        github.com/jakezion/e-commerce <ExternalLinkIcon mx="2px"/>
+                    <Link href="https://github.com/jakezion/ecommerce" target="_blank">
+                        github.com/jakezion/ecommerce <ExternalLinkIcon mx="2px"/>
                     </Link>
                 </ListItem>
             </List>

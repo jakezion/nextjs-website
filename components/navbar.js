@@ -25,7 +25,7 @@ const LinkItem = ({href, path, _target, children, ...props}) => {
         <NextLink href={href} passHref>
             <Link
                 p={2}
-                bg={active ? 'grassTeal' : undefined}
+                bg={active ? 'grassTeal' : undefined} //TODO: update and fix
                 color={active ? '#2D2A2E' : inactiveColor}
                 _target={_target}
                 {...props}
@@ -81,12 +81,13 @@ const Navbar = props => {
 
                     <LinkItem
                         _target="_blank"
-                        href="https://github.com/jakezion/visualiser"
+                        href="https://github.com/jakezion/nextjs-website"
                         path={path}
                         display="inline-flex"
                         alignItems="center"
                         style={{gap: 4}}
                         pl={2}
+                        target="_blank"
                     >
                         <IoLogoGithub/>
                         Source
