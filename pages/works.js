@@ -18,6 +18,11 @@ const Works = () => (
             A barebones e-commerce site written in php with database integration.
           </WorkGridItem>
         </Section>
+        <Section>
+          <WorkGridItem id="sbol" title="sbol" thumbnail={thumbGithub}>
+            the SBOL visual ontology API for use in the 3rd [and upcoming] versionings of the standard.
+          </WorkGridItem>
+        </Section>
       </SimpleGrid>
     </Container>
   </Layout>
