@@ -4,7 +4,6 @@ import {
     Container,
     Box,
     Link,
-    Stack,
     Heading,
     Flex,
     Menu,
@@ -12,11 +11,11 @@ import {
     MenuList,
     MenuButton,
     IconButton,
-    useColorModeValue
+    useColorModeValue, Spacer, HStack, VStack
 } from '@chakra-ui/react'
-import {HamburgerIcon} from '@chakra-ui/icons'
+import {HamburgerIcon, Icon} from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button'
-import {IoLogoGithub} from 'react-icons/io5'
+import {IoLogoGithub, IoLogoLinkedin, IoLogoTwitter} from 'react-icons/io5'
 
 const LinkItem = ({href, path, _target, children, ...props}) => {
     const active = path === href
@@ -24,6 +23,7 @@ const LinkItem = ({href, path, _target, children, ...props}) => {
     return (
         <NextLink href={href} passHref>
             <Link
+
                 p={2}
                 bg={active ? 'grassTeal' : undefined} //TODO: update and fix
                 color={active ? '#2D2A2E' : inactiveColor}
@@ -50,82 +50,80 @@ const Navbar = props => {
             {...props}
         >
             <Container
-                display="flex"
-                p={2}
-                maxW="container.md"
-                wrap="wrap"
+                // display="flex"
                 align="center"
+                p={2}
+                maxW="container.xl"
+                wrap="wrap"
                 justify="space-between"
             >
-                <Flex align="center" mr={5}>
-                    <Heading as="h1" size="lg" letterSpacing={'tighter'}>
-                        <Logo/>
-                    </Heading>
+                <Flex>
+                    <VStack>
+                        <Heading as="h1" size="lg" letterSpacing={'tighter'}>
+                            <Logo/>
+                        </Heading>
+                        <Spacer/>
+                    </VStack>
+                    <HStack>
+                        <LinkItem href="/works" path={path}>
+                            About
+                        </LinkItem>
+
+                        <LinkItem href="/posts" path={path}>
+                            Portfolio
+                        </LinkItem>
+                    </HStack>
+                    <Spacer/>
+
+
+                    <HStack>
+                        <LinkItem
+                            href="https://www.linkedin.com/in/jake-sumner-3941541a3/"
+                            path={path}
+                        >
+                            {/*TODO fix colourmodevalue*/}
+                            <Icon as={IoLogoLinkedin} w={5} h={5}
+                                  className={` ${useColorModeValue("iconsdark", "icons")} icon-inline`}/>
+
+                        </LinkItem>
+                        <LinkItem href="https://github.com/jakezion" path={path}>
+                            <Icon as={IoLogoGithub} w={5} h={5}
+                                  className={` ${useColorModeValue("iconsdark", "icons")} icon-inline`}/>
+
+                        </LinkItem>
+                        <LinkItem href="https://twitter.com/JakeSumner_11" path={path}>
+                            <Icon as={IoLogoTwitter} w={5} h={5}
+                                  className={` ${useColorModeValue("iconsdark", "icons")} icon-inline`}/>
+
+                        </LinkItem>
+
+                        {/*TODO fix issue with smaller screens not removing data accordingly*/}
+
+                        <Box pl={5} align="right">
+                            <ThemeToggleButton/>
+
+                            <Box ml={2} display={{base: 'inline-block', md: 'none'}}>
+                                <Menu isLazy id="navbar-menu">
+                                    <MenuButton
+                                        as={IconButton}
+                                        icon={<HamburgerIcon/>}
+                                        variant="outline"
+                                        aria-label="Options"
+                                    />
+                                    <MenuList>
+                                        <NextLink href="/" passHref>
+                                            <MenuItem as={Link}>About</MenuItem>
+                                        </NextLink>
+                                        <NextLink href="/works" passHref>
+                                            <MenuItem as={Link}>Portfolio</MenuItem>
+                                        </NextLink>
+                                    </MenuList>
+                                </Menu>
+                            </Box>
+                        </Box>
+                    </HStack>
+
                 </Flex>
-
-                <Stack
-                    direction={{base: 'column', md: 'row'}}
-                    display={{base: 'none', md: 'flex'}}
-                    width={{base: 'full', md: 'auto'}}
-                    alignItems="center"
-                    flexGrow={1}
-                    mt={{base: 4, md: 0}}
-                >
-                    <LinkItem href="/works" path={path}>
-                        Works
-                    </LinkItem>
-
-                    <LinkItem href="/posts" path={path}>
-                        Posts
-                    </LinkItem>
-
-                    <LinkItem
-                        _target="_blank"
-                        href="https://github.com/jakezion/nextjs-website"
-                        path={path}
-                        display="inline-flex"
-                        alignItems="center"
-                        style={{gap: 4}}
-                        pl={2}
-                        target="_blank"
-                    >
-                        <IoLogoGithub/>
-                        Source
-                    </LinkItem>
-                </Stack>
-
-                <Box flex={1} align="right">
-
-                    <ThemeToggleButton/>
-
-                    <Box ml={2} display={{base: 'inline-block', md: 'none'}}>
-                        <Menu isLazy id="navbar-menu">
-                            <MenuButton
-                                as={IconButton}
-                                icon={<HamburgerIcon/>}
-                                variant="outline"
-                                aria-label="Options"
-                            />
-                            <MenuList>
-                                <NextLink href="/" passHref>
-                                    <MenuItem as={Link}>About</MenuItem>
-                                </NextLink>
-                                <NextLink href="/works" passHref>
-                                    <MenuItem as={Link}>Works</MenuItem>
-                                </NextLink>
-                                <NextLink href="/posts" passHref>
-                                    <MenuItem as={Link}>Posts</MenuItem>
-                                </NextLink>
-                                <MenuItem
-                                    as={Link}
-                                    href="https://github.com/jakezion/nextjs-website"
-                                >
-                                    View Source
-                                </MenuItem>
-                            </MenuList>
-                        </Menu>
-                    </Box>
-                </Box>
             </Container>
         </Box>
     )

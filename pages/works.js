@@ -3,7 +3,7 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 
-import thumbGithub from '../public/images/works/github.png'
+import thumbGithub from '../public/images/profile/github.png'
 
 
 const Works = () => (
