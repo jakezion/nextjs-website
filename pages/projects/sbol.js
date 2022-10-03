@@ -10,7 +10,7 @@ import {
 } from '@chakra-ui/react'
 import Layout from '../../components/layouts/article'
 import {ExternalLinkIcon} from '@chakra-ui/icons'
-import {Title, WorkImage, Meta} from '../../components/work'
+import {Title, ProjectImage, Meta} from '../../components/projects'
 import P from '../../components/paragraph'
 
 const Work = () => (
@@ -87,8 +87,8 @@ const Work = () => (
                 </ListItem>
             </List>
 
-            <WorkImage src="/images/works/github.png" alt="sbolstandard.org"/>
-            <WorkImage src="/images/works/github.png" alt="sbol-visual-ontology"/>
+            <ProjectImage src="/images/works/github.png" alt="sbolstandard.org"/>
+            <ProjectImage src="/images/works/github.png" alt="sbol-visual-ontology"/>
         </Container>
     </Layout>
 )
