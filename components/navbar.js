@@ -65,11 +65,11 @@ const Navbar = props => {
                         <Spacer/>
                     </VStack>
                     <HStack>
-                        <LinkItem href="/works" path={path}>
+                        <LinkItem href="/about" path={path}>
                             About
                         </LinkItem>
 
-                        <LinkItem href="/posts" path={path}>
+                        <LinkItem href="/projects" path={path}>
                             Portfolio
                         </LinkItem>
                     </HStack>
@@ -80,18 +80,19 @@ const Navbar = props => {
                         <LinkItem
                             href="https://www.linkedin.com/in/jake-sumner-3941541a3/"
                             path={path}
+                            isExternal
                         >
                             {/*TODO fix colourmodevalue*/}
                             <Icon as={IoLogoLinkedin} w={5} h={5}
                                   className={` ${useColorModeValue("iconsdark", "icons")} icon-inline`}/>
 
                         </LinkItem>
-                        <LinkItem href="https://github.com/jakezion" path={path}>
+                        <LinkItem href="https://github.com/jakezion" path={path} isExternal>
                             <Icon as={IoLogoGithub} w={5} h={5}
                                   className={` ${useColorModeValue("iconsdark", "icons")} icon-inline`}/>
 
                         </LinkItem>
-                        <LinkItem href="https://twitter.com/JakeSumner_11" path={path}>
+                        <LinkItem href="https://twitter.com/JakeSumner_11" path={path} isExternal>
                             <Icon as={IoLogoTwitter} w={5} h={5}
                                   className={` ${useColorModeValue("iconsdark", "icons")} icon-inline`}/>
 

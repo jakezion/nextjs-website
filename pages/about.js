@@ -1,24 +1,18 @@
-import { Container, Heading, SimpleGrid } from '@chakra-ui/react'
+import { Container, Heading} from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
-import { GridItem } from '../components/grid-item'
+// import { GridItem } from '../components/grid-item'
 
-import thumbFishWorkflow from '../public/images/contents/temp.png'
-import thumbMyDeskSetup from '../public/images/contents/temp.png'
-import thumb500PaidUsers from '../public/images/contents/temp.png'
-import thumbFinancialGoal from '../public/images/contents/temp.png'
-import thumbHowToPriceYourself from '../public/images/contents/temp.png'
-import thumb50xFaster from '../public/images/contents/temp.png'
 
-const Posts = () => (
-  <Layout title="Posts">
+const About = () => (
+  <Layout title="About">
     <Container>
       <Heading as="h3" fontSize={20} mb={4}>
-        Popular Posts
+        About Me
       </Heading>
 
       <Section delay={0.1}>
-        <SimpleGrid columns={[1, 2, 2]} gap={6}>
+{/*        <SimpleGrid columns={[1, 2, 2]} gap={6}>
           <GridItem
             title="temp"
             thumbnail={thumbFishWorkflow}
@@ -59,11 +53,11 @@ const Posts = () => (
             thumbnail={thumb50xFaster}
             href="https://www.youtube.com/"
           />
-        </SimpleGrid>
+        </SimpleGrid>*/}
       </Section>
     </Container>
   </Layout>
 )
 
-export default Posts
+export default About
 export { getServerSideProps } from '../components/chakra'

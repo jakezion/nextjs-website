@@ -10,14 +10,14 @@ import {
 } from '@chakra-ui/react'
 import Layout from '../../components/layouts/article'
 import {ExternalLinkIcon} from '@chakra-ui/icons'
-import {Title, WorkImage, Meta} from '../../components/work'
+import {Title, ProjectImage, Meta} from '../../components/projects'
 import P from '../../components/paragraph'
 
 const Work = () => (
     <Layout title="e-commerce">
         <Container>
             <Title>
-                e-commerce platform <Badge>php stack</Badge>
+               e-commerce platform <Badge>php stack</Badge>
             </Title>
             <P>
                 the e-commerce platform is a simple barebones, full-stack project in php that allows
@@ -96,8 +96,8 @@ const Work = () => (
                 </ListItem>
             </List>
 
-            <WorkImage src="/images/works/github.png" alt="e-commerce"/>
-            <WorkImage src="/images/works/github.png" alt="e-commerce"/>
+            <ProjectImage src="/images/works/github.png" alt="e-commerce"/>
+            <ProjectImage src="/images/works/github.png" alt="e-commerce"/>
         </Container>
     </Layout>
 )
