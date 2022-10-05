@@ -4,10 +4,10 @@ import {
     Image,
     Tooltip, Kbd, Link, HStack
 } from '@chakra-ui/react'
-import Paragraph from '../components/paragraph'
+import Paragraph from '@/components/paragraph'
 //import { BioSection, BioYear } from '../components/bio'
-import Layout from '../components/layouts/article'
-import Section from '../components/section'
+import Layout from '@/components/layouts/article'
+import Section from '@/components/section'
 
 const Home = () => (
     <Layout>

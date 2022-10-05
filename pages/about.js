@@ -1,17 +1,26 @@
-import { Container, Heading} from '@chakra-ui/react'
-import Layout from '../components/layouts/article'
-import Section from '../components/section'
+import {Box, Container, Heading} from '@chakra-ui/react'
+import Layout from '@/layouts/article'
+import Section from '@/components/section'
 // import { GridItem } from '../components/grid-item'
 
 
 const About = () => (
   <Layout title="About">
     <Container>
+        <Box borderRadius="lg"
+             mb={6}
+             mt={6}
+             p={3}
+             display={{md: 'flex'}}>
+
       <Heading as="h3" fontSize={20} mb={4}>
         About Me
       </Heading>
-
+        </Box>
       <Section delay={0.1}>
+
+
+
 {/*        <SimpleGrid columns={[1, 2, 2]} gap={6}>
           <GridItem
             title="temp"

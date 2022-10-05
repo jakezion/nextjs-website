@@ -14,8 +14,8 @@ import {
     useColorModeValue, Spacer, HStack, VStack
 } from '@chakra-ui/react'
 import {HamburgerIcon, Icon} from '@chakra-ui/icons'
-import ThemeToggleButton from './theme-toggle-button'
 import {IoLogoGithub, IoLogoLinkedin, IoLogoTwitter} from 'react-icons/io5'
+import ThemeToggleButton from "@/components/theme-toggle-button";
 
 const LinkItem = ({href, path, _target, children, ...props}) => {
     const active = path === href
@@ -25,7 +25,7 @@ const LinkItem = ({href, path, _target, children, ...props}) => {
             <Link
 
                 p={2}
-                bg={active ? 'grassTeal' : undefined} //TODO: update and fix
+                bg={active ? 'monoYellow' : undefined} //TODO: update and fix
                 color={active ? '#2D2A2E' : inactiveColor}
                 _target={_target}
                 {...props}

@@ -8,10 +8,10 @@ import {
     UnorderedList,
     Image, Tooltip
 } from '@chakra-ui/react'
-import Layout from '../../components/layouts/article'
+import Layout from '@/layouts/article'
 import {ExternalLinkIcon} from '@chakra-ui/icons'
-import {Title, ProjectImage, Meta} from '../../components/projects'
-import P from '../../components/paragraph'
+import {Title, ProjectImage, Meta} from '@/components/projects'
+import P from '@/components/paragraph'
 
 const Work = () => (
     <Layout title="sbol-visual-ontology">
