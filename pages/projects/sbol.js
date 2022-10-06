@@ -53,7 +53,7 @@ const Work = () => (
                                     maxWidth="32px"
                                     maxHeight="32px"
                                     display="inline-block"
-                                    src="/images/icons/bootstrap.png"
+                                    src="/images/icons/java.png"
                                     alt="Java Logo"
                                     loading="lazy"
                                 />
@@ -63,7 +63,7 @@ const Work = () => (
                                     maxWidth="32px"
                                     maxHeight="32px"
                                     display="inline-block"
-                                    src="/images/icons/php.png"
+                                    src="/images/icons/apache.png"
                                     alt="Apache Logo"
                                     loading="lazy"
                                 />
@@ -73,7 +73,17 @@ const Work = () => (
                                     maxWidth="32px"
                                     maxHeight="32px"
                                     display="inline-block"
-                                    src="/images/icons/codeigniter.png"
+                                    src="/images/icons/html.png"
+                                    alt="HTML Logo"
+                                    loading="lazy"
+                                />
+                            </Tooltip>
+                                <Tooltip label='Python' placement='bottom'>
+                                <Image
+                                    maxWidth="32px"
+                                    maxHeight="32px"
+                                    display="inline-block"
+                                    src="/images/icons/python.png"
                                     alt="HTML Logo"
                                     loading="lazy"
                                 />
@@ -86,6 +96,8 @@ const Work = () => (
                     <Link href="https://vows.sbolstandard.org/" target="_blank">
                         vows.sbolstandard.org <ExternalLinkIcon mx="2px"/>
                     </Link>
+                    </ListItem>
+                        <ListItem>
                     <Meta>Source</Meta>
                     <Link href="https://github.com/SynBioDex/sbol-visual-ontology" target="_blank">
                         github.com/SynBioDex/sbol-visual-ontology<ExternalLinkIcon mx="2px"/>
@@ -93,8 +105,8 @@ const Work = () => (
                 </ListItem>
             </List>
 
-            <ProjectImage src="/images/works/github.png" alt="sbolstandard.org"/>
-            <ProjectImage src="/images/works/github.png" alt="sbol-visual-ontology"/>
+            <ProjectImage src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fnbt.2891/MediaObjects/41587_2014_Article_BFnbt2891_Fig1_HTML.jpg" alt="sbolstandard.org"/>
+            <ProjectImage src="/images/contents/sbolvows.png" alt="sbol-visual-ontology"/>
 
         </Container>
         </Box>

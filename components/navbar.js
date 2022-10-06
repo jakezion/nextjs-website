@@ -25,8 +25,7 @@ const LinkItem = ({href, path, _target, children, ...props}) => {
             <Link
 
                 p={2}
-                bg={active ? 'monoYellow' : undefined} //TODO: update and fix
-                color={active ? '#2D2A2E' : inactiveColor}
+                color={active ? useColorModeValue('monoYellow', 'monoPurple') : inactiveColor}
                 _target={_target}
                 {...props}
             >
