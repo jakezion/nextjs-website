@@ -14,26 +14,26 @@ import {Title, ProjectImage, Meta} from '@/components/projects'
 import P from '@/components/paragraph'
 
 const Work = () => (
-    <Layout title="e-commerce">
+    <Layout title="metronome">
         <Container>
             <Title>
-               e-commerce platform <Badge>php stack</Badge>
+                JavaScript Metronome <Badge>JavaScript stack</Badge>
             </Title>
             <P>
-                the e-commerce platform is a simple barebones, full-stack project in php that allows
-                for the buying of good from a store front. customers can register, login,
-                add items to a basket and purchase them from the storefront. Items have quantity
-                values and is connected to a database system.
+                The Metronome is a barebones JavaScript Metronome designed for a technical task for a job application.
+                It has a <em>tap tempo</em> feature which takes 4 user inputs to dictate a BPM, that can then be used to
+                play the metronome. It includes 3 separate sound signatures for the metronome and the scale that is playing
+                can be altered live [2/4 - 12/4]. The BPM can be altered at any point by tapping the tempo button whenever to change
+                the current value of the BPM.
             </P>
             <P>
-                All code is free to use, just credit my work if you decide to use the e-commerce
-                site as a barebones for a webserver.
+                All code is free to use, just credit my work if you decide to use the metronome in your work.
             </P>
             <UnorderedList my={4}>
-                <ListItem>Login system</ListItem>
-                <ListItem>Storefront and items</ListItem>
-                <ListItem>Purchase and History</ListItem>
-                <ListItem>Admin API</ListItem>
+                <ListItem>Metronome</ListItem>
+                <ListItem>3 Individual Sounds</ListItem>
+                <ListItem>Tap Tempo</ListItem>
+                <ListItem>Scale Changer</ListItem>
             </UnorderedList>
 
             <List ml={4} my={4}>
@@ -45,43 +45,34 @@ const Work = () => (
                     <Meta>Stack</Meta>
                     <span>
                         <Flex>
-                            <Tooltip label='Bootstrap' placement='bottom'>
+                            <Tooltip label='HTML & CSS' placement='bottom'>
                                 <Image
                                     maxWidth="32px"
                                     maxHeight="32px"
                                     display="inline-block"
-                                    src="/images/icons/bootstrap.png"
-                                    alt="Bootstrap Logo"
+                                    src="/images/icons/html.png"
+                                    alt="HTML & CSS Logo"
                                     loading="lazy"
                                 />
                             </Tooltip>
-                            <Tooltip label='PHP' placement='bottom'>
+
+                            <Tooltip label='JavaScript' placement='bottom'>
                                 <Image
                                     maxWidth="32px"
                                     maxHeight="32px"
                                     display="inline-block"
-                                    src="/images/icons/php.png"
-                                    alt="PHP Logo"
+                                    src="/images/icons/javascript.png"
+                                    alt="JavaScript Logo"
                                     loading="lazy"
                                 />
                             </Tooltip>
-                            <Tooltip label='CodeIgniter4' placement='bottom'>
+                                <Tooltip label='React' placement='bottom'>
                                 <Image
                                     maxWidth="32px"
                                     maxHeight="32px"
                                     display="inline-block"
-                                    src="/images/icons/codeigniter.png"
-                                    alt="CodeIgniter Logo"
-                                    loading="lazy"
-                                />
-                            </Tooltip>
-                            <Tooltip label='MySQL' placement='bottom'>
-                                <Image
-                                    maxWidth="32px"
-                                    maxHeight="32px"
-                                    display="inline-block"
-                                    src="/images/icons/mysql.png"
-                                    alt="MySql Logo"
+                                    src="/images/icons/react.png"
+                                    alt="React Logo"
                                     loading="lazy"
                                 />
                             </Tooltip>
@@ -90,13 +81,13 @@ const Work = () => (
                 </ListItem>
                 <ListItem>
                     <Meta>Source</Meta>
-                    <Link href="https://github.com/jakezion/ecommerce" target="_blank">
-                        github.com/jakezion/ecommerce <ExternalLinkIcon mx="2px"/>
+                    <Link href="https://github.com/jakezion/metronome" target="_blank">
+                        github.com/jakezion/metronome <ExternalLinkIcon mx="2px"/>
                     </Link>
                 </ListItem>
             </List>
 
-            <ProjectImage src="/images/contents/github.png" alt="e-commerce"/>
+            <ProjectImage src="/images/contents/metronome.png" alt="e-commerce"/>
         </Container>
     </Layout>
 )
