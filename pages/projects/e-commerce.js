@@ -6,7 +6,7 @@ import {
     ListItem,
     Flex,
     UnorderedList,
-    Image, Tooltip
+    Image, Tooltip, Box
 } from '@chakra-ui/react'
 import Layout from '@/layouts/article'
 import {ExternalLinkIcon} from '@chakra-ui/icons'
@@ -15,7 +15,13 @@ import P from '@/components/paragraph'
 
 const Work = () => (
     <Layout title="e-commerce">
+        <Box borderRadius="lg"
+             mb={6}
+             mt={6}
+             p={3}
+             display={{md: 'flex'}}>
         <Container>
+
             <Title>
                e-commerce platform <Badge>php stack</Badge>
             </Title>
@@ -97,7 +103,9 @@ const Work = () => (
             </List>
 
             <ProjectImage src="/images/contents/github.png" alt="e-commerce"/>
+
         </Container>
+        </Box>
     </Layout>
 )
 

@@ -6,7 +6,7 @@ import {
     ListItem,
     Flex,
     UnorderedList,
-    Image, Tooltip
+    Image, Tooltip, Box
 } from '@chakra-ui/react'
 import Layout from '@/layouts/article'
 import {ExternalLinkIcon} from '@chakra-ui/icons'
@@ -15,7 +15,13 @@ import P from '@/components/paragraph'
 
 const Work = () => (
     <Layout title="sbol-visual-ontology">
+        <Box borderRadius="lg"
+             mb={6}
+             mt={6}
+             p={3}
+             display={{md: 'flex'}}>
         <Container>
+
             <Title>
                 sbol-visal-ontology v3<Badge>Java stack</Badge>
             </Title>
@@ -89,7 +95,9 @@ const Work = () => (
 
             <ProjectImage src="/images/works/github.png" alt="sbolstandard.org"/>
             <ProjectImage src="/images/works/github.png" alt="sbol-visual-ontology"/>
+
         </Container>
+        </Box>
     </Layout>
 )
 
