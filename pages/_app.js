@@ -3,6 +3,7 @@ import Fonts from '@/components/fonts'
 import { AnimatePresence } from 'framer-motion'
 import Chakra from '@/components/chakra'
 import '@/lib/styles.css'
+import "focus-visible/dist/focus-visible"
 
 function Website({ Component, pageProps, router }) {
   return (
